@@ -1,0 +1,34 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "hoangdktd123",
+    "database": "postgres",
+    "host": "127.0.0.1",
+    "port":"5432",
+    "protocol":"postgres",
+    "dialect": "postgres",
+    "define": {
+      "freezeTableName": "true"
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+      "freezeTableName": "true"
+    }
+  },
+  "production": {
+    "username": "jbbytyqgytaztk",
+    "password": "d191fe5d7b40db7966fbee45965310552442fab23a64b15edd1cb298347032d2l",
+    "database": "d9v61lco0vj8li",
+    "host": "ec2-54-243-252-232.compute-1.amazonaws.com",
+    "dialect": "postgresql",
+    "define": {
+      "freezeTableName": "true"
+    }
+  }
+}
