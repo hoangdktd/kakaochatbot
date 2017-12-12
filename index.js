@@ -131,3 +131,6 @@ exports.keyboard = functions.https.onRequest((req,res) => {
 exports.message = functions.https.onRequest((req,res) => {
   kakaoPlusController.postMessage(req,res);
 });
+exports.test = functions.https.onRequest((req,res) => {
+  kakaoPlusController.testMessage(req,res);
+});

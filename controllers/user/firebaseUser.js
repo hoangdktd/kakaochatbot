@@ -16,11 +16,17 @@ module.exports = {
 
     updateUser (req, res) {
         const user = {
-            user_id: req.user_id,
-            address: req.address,
-            email: req.email,
-            user_name: req.user_name
+            user_id: req.user_id
         };
+        if (req.address && req.address !== null && req.address !== '' && req.address !== undefined) { 
+            user['address'] = req.address;
+        }
+        if (req.email && req.email !== null && req.email !== '' && req.email !== undefined) { 
+            user['email'] = req.email;
+        }
+        if (req.user_name && req.user_name !== null && req.user_name !== '' && req.user_name !== undefined) { 
+            user['user_name'] = req.user_name;
+        }
         const hopperRef = usersRef.child(user.user_id);
         hopperRef.update(user);
     },
